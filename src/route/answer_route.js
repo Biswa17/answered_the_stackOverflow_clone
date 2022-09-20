@@ -4,5 +4,5 @@ module.exports = (app) => {
   // get the answer page
   app.get("/answer/api/v1/answer", )
   
-  app.post("/answer/api/v1/answer", answer_controller.new_answer)
+  app.post("/answer/api/v1/answer/:question", answer_controller.new_answer)
 }
