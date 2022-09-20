@@ -12,3 +12,4 @@ by start of it i knew nothing about frontend so i learned in last 5 days thank y
 below is video link describing the funtionality and what everything was suppose to do i will update this video in few days completeing the app
 hope you give me another opportunity and watch the completed version in a week or so
 
+https://www.loom.com/share/390382b3590341d1a9c903ad9c8e044e
