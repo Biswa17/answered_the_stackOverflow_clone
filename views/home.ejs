@@ -1,0 +1,30 @@
+<%- include("./partials/header") -%>
+
+    <h1>Home</h1>
+    <p>
+        <%= home_content %>
+    </p>
+
+    <% for(let i=0; i < posts.length; i++){ %>
+        <h2>
+            <%= posts[i] %>
+        </h2>
+        <a href="/answer/api/v1/post/<%= posts[i] %>"  > See All Answers</a>
+        
+
+        <form action="/compose" method="get">
+        <p>
+            <textarea class="form-control" name="new_question" rows="9" cols="30"></textarea> 
+        </p>
+            <button type="submit" class="btn btn-primary mb-3">Post answer</button>
+        </form>
+
+    <% } %>
+        
+        <form action="/answer/api/v1/question" method="get">
+            <button type="submit" class="btn btn-primary mt-3">Ask a Question</button>
+        </form>
+
+
+
+<%- include("./partials/footer") -%>

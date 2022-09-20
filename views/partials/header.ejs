@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Answered</title>
+  <meta charset="utf-8">
+
+  <!-- bootstrap 5 link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="icon" href="/images/favicon.ico">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+    <div class="container">
+      <div class="navbar-header brand">
+        <p class="navbar-brand">Answered</p>
+        <p> solution to all your problems </p>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- 6 -->
+        <li class="nav-item" id="home"><a class="nav-link  active" href="/answer/api/v1/home">HOME</a></li>
+        <li class="nav-item" id="about"><a class="nav-link" href="/answer/api/v1/about">ABOUT US</a></li>
+        <li class="nav-item" id="contact"><a class="nav-link" href="/answer/api/v1/contact">CONTACT US</a></li>
+        <li class="nav-item">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" name="question_searched" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">🔍</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-outline-success btn-sm signin_btn" id="signin"><a class="nav-link signin"
+              href="/answer/api/v1/<%= log_status %>"><%= user_name %></a></button>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+<body>
+  <div class="container">
